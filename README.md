@@ -8,11 +8,14 @@ Pageless is a jQuery plugin.
 As you scroll down you see more results coming back at you automatically.
 It provides an automatic pagination in an accessible way : if javascript is disabled your standard pagination is supposed to work.
 
+* This is identical to the original jquery.Pageless with the addition of a 'loadHidden' setting to prevent .pageless from being called on hidden elements
+
 Parameters
 ----------
 
 * `currentPage`: current page (params[:page])
 * `distance`: distance to the end of page in px when ajax query is fired
+* `loadHidden`: checks to see if element is visible before loading, default is false
 * `loader`: selector of the loader div (ajax activity indicator)
 * `loaderHtml`: html code of the div if loader not used
 * `loaderImage`: image inside the loader
